@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { CreateSeriesDto } from './dto/create-series.dto';
-import { UpdateSeriesDto } from './dto/update-series.dto';
+import { UpdateSeriesDto } from './dto/update-serie.dto';
 
 @Injectable()
 export class SeriesService {
