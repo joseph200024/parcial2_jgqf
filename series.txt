@@ -1,0 +1,31 @@
+series
+
+N°:1
+Titulo:The Walking Dead
+Sinopsis:En el alba de un apocalipsis zombi, los sobrevivientes se aferran a la esperanza de la humanidad uniéndose para librar una batalla por su supervivencia.
+Director:Jon Amiel, Greg Nicotero
+Temporadas: 11
+Fecha de Estreno:2010-10-31
+
+N°:2
+Titulo:ALF
+Sinopsis:La criatura sabionda y divertida, ALF (forma de vida alienígena), se choca en un garaje de un suburbio y su nave espacial no puede ser reparada. Esta criatura que es fea, bajita y tiene una mala actitud, es acogida por la familia que acepta al alienígena velludo y observa mientras él comenta sobre la humanidad y trata de comerse al gato, que es una exquisitez en su planeta Melmac. Esta es una serie divertida, para entretener a toda la familia, en especial a los niños.
+Director:Tom Patchett, Peter Bonerz
+Temporadas:4
+Fecha de Estreno:1986-09-22
+
+N°:3
+Titulo:Dragon ball
+Sinopsis:Su trama describe las aventuras de Gokū, un guerrero saiyajin, experto en artes marciales que en su infancia inicia sus viajes y aventuras en las que pone a prueba y mejora sus habilidades de pelea, enfrentando oponentes y protegiendo a la Tierra de otros seres que quieren conquistarla y exterminar a la humanidad
+Director:Kimitoshi Chioka, Morio Hatano, Kohei Hatano, Ryota Nakamura
+Temporadas:20
+Fecha de Estreno:1986-02-26
+
+
+N°:4
+Titulo:south park
+Sinopsis: 'South Park' gira en torno a Kyle, Cartman, Stan y Kenny que son cuatro amigos bocazas que crecen en un pueblo surrealista llamado South Park en Colorado, un pueblo cuyos ciudadanos parecen ser más políticamente correctos que el resto.
+Director:Peter Charles
+Temporadas:26
+Fecha de Estreno:1997-08-13
+	
