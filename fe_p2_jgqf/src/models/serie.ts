@@ -1,4 +1,4 @@
-export interface Interprete {
+export interface Serie {
   id: number
   titulo: string
   sinopsis: string
