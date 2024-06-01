@@ -11,20 +11,26 @@ const ENDPOINT = props.ENDPOINT_API ?? ''
 const titulo = ref('')
 const sinopsis = ref('')
 const director = ref('')
-const temporadas = ref('')
+const categoria = ref('')
+const temporadas = ref<number | null>(null)
 const fechaEstreno = ref('')
 const id = router.currentRoute.value.params['id']
 
 async function editarSerie() {
-  await http
-    .patch(`${ENDPOINT}/${id}`, {
-      titulo: titulo.value,
-      sinopsis: sinopsis.value,
-      director: director.value,
-      temporadas: temporadas.value,
-      fechaEstreno: fechaEstreno.value
-    })
-    .then(() => router.push('/series'))
+  if (temporadas.value !== null) {
+    await http
+      .patch(`${ENDPOINT}/${id}`, {
+        titulo: titulo.value,
+        sinopsis: sinopsis.value,
+        director: director.value,
+        categoria: categoria.value,
+        temporadas: temporadas.value,
+        fechaEstreno: fechaEstreno.value
+      })
+      .then(() => router.push('/series'))
+  } else {
+    alert('El campo Temporadas debe ser un número válido.')
+  }
 }
 
 async function getSerie() {
@@ -32,7 +38,8 @@ async function getSerie() {
     ;(titulo.value = response.data.titulo),
       (sinopsis.value = response.data.sinopsis),
       (director.value = response.data.director),
-      (temporadas.value = response.data.temporadas),
+      (categoria.value = response.data.categoria),
+      (temporadas.value = parseInt(response.data.temporadas)),
       (fechaEstreno.value = response.data.fechaEstreno)
   })
 }
@@ -91,6 +98,16 @@ onMounted(() => {
         <div class="form-floating mb-3">
           <input
             type="text"
+            class="form-control"
+            v-model="categoria"
+            placeholder="Categoria"
+            required
+          />
+          <label for="director">Categoria</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="number"
             class="form-control"
             v-model="temporadas"
             placeholder="Temporadas"

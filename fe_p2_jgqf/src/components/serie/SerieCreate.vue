@@ -11,6 +11,7 @@ const ENDPOINT = props.ENDPOINT_API ?? ''
 const titulo = ref('')
 const sinopsis = ref('')
 const director = ref('')
+const categoria = ref('')
 const temporadas = ref('')
 const fechaEstreno = ref('')
 
@@ -20,6 +21,7 @@ async function crearSerie() {
       titulo: titulo.value,
       sinopsis: sinopsis.value,
       director: director.value,
+      categoria: categoria.value,
       temporadas: parseInt(temporadas.value),
       fechaEstreno: fechaEstreno.value ? new Date(fechaEstreno.value) : null
     })
@@ -72,6 +74,16 @@ function goBack() {
             required
           />
           <label for="director">Director</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            v-model="categoria"
+            placeholder="Categoria"
+            required
+          />
+          <label for="categoria">Categoria</label>
         </div>
         <div class="form-floating mb-3">
           <input

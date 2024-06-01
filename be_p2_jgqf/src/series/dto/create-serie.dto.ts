@@ -31,6 +31,13 @@ export class CreateSerieDto {
   readonly director: string;
 
   @ApiProperty()
+  @IsNotEmpty({ message: 'El campo categoria no debe ser vacío' })
+  @IsString({ message: 'El campo categoria debe ser de tipo cadena' })
+  @MaxLength(100, { message: 'El campo categoria no debe ser mayor a 100 caracteres' })
+  @MinLength(3, { message: 'El campo categoria no debe ser menor a 3 caracteres' })
+  readonly categoria: string;
+
+  @ApiProperty()
   @IsNotEmpty({ message: 'El campo sinopsis no debe ser vacío' })
   @IsNumber({}, { message: 'El campo sinopsis debe ser de tipo numérico' })
   readonly temporadas: number;
